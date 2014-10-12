@@ -1,0 +1,39 @@
+{
+  "name": "glsl-diffuse-lambert",
+  "version": "1.0.0",
+  "description": "Lambertian diffuse lighting for GLSL",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "a-big-triangle": "^1.0.0",
+    "beefy": "^2.1.1",
+    "glslify": "^1.6.0"
+  },
+  "scripts": {
+    "test": "beefy example/example.js --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stackgl/glsl-diffuse-lambert.git"
+  },
+  "keywords": [
+    "glsl",
+    "lambert",
+    "diffuse",
+    "lighting",
+    "glslify"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stackgl/glsl-diffuse-lambert/issues"
+  },
+  "browserify": {
+    "transform": "glslify"
+  },
+  "homepage": "https://github.com/stackgl/glsl-diffuse-lambert"
+}

@@ -26,6 +26,7 @@ void main() {\n\
     -cos(phi));\n\
   vec3 position = vec3(normal.xy, normal.z+5.0);\n\
   vec3 lightDir = normalize(lightPosition - position);\n\
+  vec3 eyeDir = normalize(-position);\n\
   if(r > 1.0 || dot(normal,eyeDir)<0.0) {\n\
     gl_FragColor = vec4(0.0, 0.0, 1.0, 1.0);\n\
   } else {\n\
